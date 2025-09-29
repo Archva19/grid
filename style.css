@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 100px 300px 300px 100px;
+    grid-template-columns: minmax(100px,400px) minmax(200px,600px) minmax(100px,400px);
+    gap: 15px;
+    padding: 35px;
+}
+
+.container div{
+    display: flex;
+    border: 2px solid rgb(219, 218, 218);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    grid-column: 1 / span 3;
+}
+
+.sidebar{
+    grid-row: 2 / span 2;
+}
+
+.main_content{
+    grid-column: 2 / span 2;
+}
+
+.footer{
+    grid-column: 1 / span 3;
+}
